@@ -1,0 +1,164 @@
+﻿namespace EVERYTHIN_5293993
+{
+    partial class FormFindIDConsumer
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFindIDConsumer));
+            this.labelFindID = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonIDConfirm = new System.Windows.Forms.Button();
+            this.dateTimePickerBirth = new System.Windows.Forms.DateTimePicker();
+            this.labelIDBirth = new System.Windows.Forms.Label();
+            this.textBoxFindIdName = new System.Windows.Forms.TextBox();
+            this.labelIdName = new System.Windows.Forms.Label();
+            this.oracleConnection1 = new Oracle.DataAccess.Client.OracleConnection();
+            this.oracleCommand1 = new Oracle.DataAccess.Client.OracleCommand();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // labelFindID
+            // 
+            this.labelFindID.AutoSize = true;
+            this.labelFindID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(134)))), ((int)(((byte)(153)))));
+            this.labelFindID.Font = new System.Drawing.Font("나눔스퀘어", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelFindID.ForeColor = System.Drawing.Color.White;
+            this.labelFindID.Location = new System.Drawing.Point(12, 9);
+            this.labelFindID.Name = "labelFindID";
+            this.labelFindID.Size = new System.Drawing.Size(164, 26);
+            this.labelFindID.TabIndex = 34;
+            this.labelFindID.Text = "아이디 찾기>>";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, -4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(467, 50);
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
+            // buttonIDConfirm
+            // 
+            this.buttonIDConfirm.BackColor = System.Drawing.Color.LightSlateGray;
+            this.buttonIDConfirm.Font = new System.Drawing.Font("나눔스퀘어", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.buttonIDConfirm.ForeColor = System.Drawing.Color.White;
+            this.buttonIDConfirm.Location = new System.Drawing.Point(162, 179);
+            this.buttonIDConfirm.Name = "buttonIDConfirm";
+            this.buttonIDConfirm.Size = new System.Drawing.Size(137, 52);
+            this.buttonIDConfirm.TabIndex = 32;
+            this.buttonIDConfirm.Tag = "3";
+            this.buttonIDConfirm.Text = "확인";
+            this.buttonIDConfirm.UseVisualStyleBackColor = false;
+            this.buttonIDConfirm.Click += new System.EventHandler(this.buttonConfirmClicked);
+            // 
+            // dateTimePickerBirth
+            // 
+            this.dateTimePickerBirth.Font = new System.Drawing.Font("나눔스퀘어", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.dateTimePickerBirth.Location = new System.Drawing.Point(125, 122);
+            this.dateTimePickerBirth.Name = "dateTimePickerBirth";
+            this.dateTimePickerBirth.Size = new System.Drawing.Size(285, 31);
+            this.dateTimePickerBirth.TabIndex = 31;
+            this.dateTimePickerBirth.Tag = "2";
+            // 
+            // labelIDBirth
+            // 
+            this.labelIDBirth.AutoSize = true;
+            this.labelIDBirth.Font = new System.Drawing.Font("나눔스퀘어", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelIDBirth.ForeColor = System.Drawing.Color.White;
+            this.labelIDBirth.Location = new System.Drawing.Point(22, 122);
+            this.labelIDBirth.Name = "labelIDBirth";
+            this.labelIDBirth.Size = new System.Drawing.Size(97, 23);
+            this.labelIDBirth.TabIndex = 30;
+            this.labelIDBirth.Text = "생년월일 :";
+            // 
+            // textBoxFindIdName
+            // 
+            this.textBoxFindIdName.Font = new System.Drawing.Font("나눔스퀘어", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBoxFindIdName.ForeColor = System.Drawing.Color.Black;
+            this.textBoxFindIdName.Location = new System.Drawing.Point(125, 72);
+            this.textBoxFindIdName.Name = "textBoxFindIdName";
+            this.textBoxFindIdName.Size = new System.Drawing.Size(285, 31);
+            this.textBoxFindIdName.TabIndex = 29;
+            this.textBoxFindIdName.Tag = "1";
+            // 
+            // labelIdName
+            // 
+            this.labelIdName.AutoSize = true;
+            this.labelIdName.Font = new System.Drawing.Font("나눔스퀘어", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelIdName.ForeColor = System.Drawing.Color.White;
+            this.labelIdName.Location = new System.Drawing.Point(22, 75);
+            this.labelIdName.Name = "labelIdName";
+            this.labelIdName.Size = new System.Drawing.Size(94, 23);
+            this.labelIdName.TabIndex = 28;
+            this.labelIdName.Text = "이      름 : ";
+            // 
+            // oracleConnection1
+            // 
+            this.oracleConnection1.ConnectionString = "DATA SOURCE=ORAORA;USER ID=B5293993;PASSWORD=B5293993;";
+            // 
+            // oracleCommand1
+            // 
+            this.oracleCommand1.Connection = this.oracleConnection1;
+            this.oracleCommand1.Transaction = null;
+            // 
+            // FormFindIDConsumer
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(95)))), ((int)(((byte)(111)))));
+            this.ClientSize = new System.Drawing.Size(446, 261);
+            this.Controls.Add(this.labelFindID);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.buttonIDConfirm);
+            this.Controls.Add(this.dateTimePickerBirth);
+            this.Controls.Add(this.labelIDBirth);
+            this.Controls.Add(this.textBoxFindIdName);
+            this.Controls.Add(this.labelIdName);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "FormFindIDConsumer";
+            this.Text = "EVERYTHIN\'";
+            this.Load += new System.EventHandler(this.FormFindIDConsumer_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label labelFindID;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button buttonIDConfirm;
+        private System.Windows.Forms.DateTimePicker dateTimePickerBirth;
+        private System.Windows.Forms.Label labelIDBirth;
+        private System.Windows.Forms.TextBox textBoxFindIdName;
+        private System.Windows.Forms.Label labelIdName;
+        private Oracle.DataAccess.Client.OracleConnection oracleConnection1;
+        private Oracle.DataAccess.Client.OracleCommand oracleCommand1;
+    }
+}
